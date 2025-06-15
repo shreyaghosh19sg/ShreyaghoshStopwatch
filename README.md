@@ -13,7 +13,7 @@ A beautifully animated stopwatch web application built with HTML, CSS, and JavaS
 
 ## 📸 Screenshots
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.jpg)
 
 ## 🚀 How to Run
 
