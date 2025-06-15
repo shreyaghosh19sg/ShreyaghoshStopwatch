@@ -11,12 +11,4 @@ A beautifully animated stopwatch web application built with HTML, CSS, and JavaS
 - Glowing buttons and smooth effects
 - Fully responsive
 
-## 📸 Screenshots
 
-![Screenshot](screenshot.jpg)
-
-## 🚀 How to Run
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/shreya-stopwatch.git
