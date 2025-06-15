@@ -1,0 +1,128 @@
+/* Reset & font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #f3ec78, #af4261);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bgMove 10s infinite alternate;
+}
+
+@keyframes bgMove {
+  0% {
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+  }
+  100% {
+    background: linear-gradient(135deg, #42e695, #3bb2b8);
+  }
+}
+
+/* === Stopwatch Container === */
+.container {
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #00c9ff, #92fe9d); /* bright blue to green */
+  box-shadow: 0 0 20px rgba(0, 201, 255, 0.5);
+  border: 2px solid #ffffff55;
+  animation: containerGlow 5s infinite alternate;
+}
+
+@keyframes containerGlow {
+  0% {
+    box-shadow: 0 0 15px #00c9ff;
+  }
+  100% {
+    box-shadow: 0 0 30px #92fe9d;
+  }
+}
+
+/* === Title === */
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 32px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* === Stopwatch Display === */
+.stopwatch #time {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #fff;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff;
+  }
+  to {
+    text-shadow: 0 0 20px #ff80ab, 0 0 30px #ff80ab;
+  }
+}
+
+/* === Buttons === */
+.buttons .btn {
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttons .btn:hover {
+  background: linear-gradient(45deg, #42e695, #3bb2b8);
+  transform: scale(1.1);
+}
+
+/* === Lap Box === */
+#laps {
+  list-style: none;
+  margin-top: 20px;
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 10px;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0); /* purple gradient */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+  border: 2px solid #ffffff55;
+  animation: lapGlow 5s infinite alternate;
+}
+
+#laps li {
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@keyframes lapGlow {
+  0% {
+    box-shadow: 0 0 10px #4a00e0;
+  }
+  100% {
+    box-shadow: 0 0 25px #8e2de2;
+  }
+}
